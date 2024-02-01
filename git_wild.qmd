@@ -28,9 +28,10 @@ ggplot(data = diamonds, aes(x = carat, y = price))+
 ```
 
 ```{r partner 2}
-### In this code chunk, start with the diamonds dataset (built in to
-### ggplot2 package) and create a subset based on filtering, e.g., 
-### size greater than 1 carat or cut is "Ideal"
+diamonds_df <- diamonds
+ggplot(diamonds, aes(x = cut, y = price)) +
+  geom_col()+
+  theme_minimal()
 ```
 
 ## STEP 6: Uh oh, merge conflicts!
