@@ -37,9 +37,9 @@ ggplot(diamonds, aes(x = cut, y = price)) +
 ## STEP 6: Uh oh, merge conflicts!
 
 ```{r break-it-1}
-### Both partners - delete this comment, then write some code here
-### to plot, summarize, calculate something simple using the diamonds
-### dataset (or anything you like, really)
+# using the diamonds database
+diamonds_good <- diamonds %>% 
+  filter(cut == 'Ideal')
 ```
 
 ## STEP 10: And even more merge conflicts!
